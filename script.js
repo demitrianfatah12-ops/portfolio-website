@@ -38,7 +38,8 @@ filterButtons.forEach((button) => {
     button.classList.add('active');
     const filter = button.dataset.filter;
     timelineItems.forEach((item) => {
-      item.style.display = filter === 'all' || item.dataset.category === filter ? 'grid' : 'none';
+      const visible = filter === 'all' || item.dataset.category === filter;
+      item.style.display = visible ? 'grid' : 'none';
     });
   });
 });
