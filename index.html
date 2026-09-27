@@ -3,292 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demitrian Fatah - Portfolio</title>
+    <title>Demitrian Fatah | Portfolio</title>
     <meta
       name="description"
-      content="Electrical Engineering Technology student portfolio showcasing experience, education, and achievements."
+      content="Portfolio of Demitrian Fatah, Electrical Engineering Technology Student."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navigation -->
     <header class="header">
-      <nav class="navbar">
-        <div class="container nav-container">
-          <a href="#" class="logo">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <rect width="32" height="32" rx="8" fill="url(#gradient-logo)" />
-              <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-weight="700" font-size="18" font-family="Arial">DF</text>
-              <defs>
-                <linearGradient id="gradient-logo" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#c9a86a;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#ecd6a2;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>Demitrian</span>
-          </a>
+      <nav class="container nav">
+        <a href="#top" class="brand">
+          <span class="brand-mark">DF</span>
+          <span>Demitrian Fatah</span>
+        </a>
 
-          <button class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+        <button class="menu-toggle" aria-label="Open menu" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-          <ul class="nav-menu" id="navMenu">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-            <li><a href="#contact" class="btn btn-primary">Get In Touch</a></li>
-          </ul>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero" id="hero">
-        <div class="container">
-          <div class="hero-grid">
-            <div class="hero-text">
-              <div class="hero-label fadeInUp" style="animation-delay: 0s">
-                <span class="badge">Welcome to my portfolio</span>
-              </div>
-              <h1 class="hero-title fadeInUp" style="animation-delay: 0.1s">
-                Demitrian <span class="gradient-text">Fatah</span>
-              </h1>
-              <p class="hero-subtitle fadeInUp" style="animation-delay: 0.2s">
-                Electrical Engineering Technology Student at Universitas Gadjah Mada
-              </p>
-              <p class="hero-description fadeInUp" style="animation-delay: 0.25s">
-                First-year student with a strong foundation in physics and mathematics, 
-                focused on electrical transmission and distribution systems, renewable energy technologies, 
-                and circuit measurement & testing.
-              </p>
-              <div class="hero-cta fadeInUp" style="animation-delay: 0.3s">
-                <a href="#experience" class="btn btn-primary btn-large">
-                  <span>Explore Experience</span>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7 10H13M13 10L10 7M13 10L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
-                <a href="#contact" class="btn btn-secondary btn-large">
-                  <span>Connect With Me</span>
-                </a>
-              </div>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">Electrical Engineering Technology Student</p>
+            <h1>
+              DEMITRIAN <span>FATAH</span>
+            </h1>
 
-              <div class="hero-info fadeInUp" style="animation-delay: 0.4s">
-                <div class="info-item">
-                  <span class="info-label">Email</span>
-                  <a href="mailto:demitrian.fatah@mail.ugm.ac.id">demitrian.fatah@mail.ugm.ac.id</a>
-                </div>
-                <div class="info-item">
-                  <span class="info-label">Phone</span>
-                  <a href="tel:+6282226026615">+62 822 2602 6615</a>
-                </div>
-              </div>
+            <p class="hero-subtitle">
+              First-year Electrical Engineering Technology student with a strong
+              foundation in physics and mathematics, focused on electrical
+              transmission and distribution systems, renewable energy
+              technologies, and circuit measurement and testing.
+            </p>
+
+            <div class="cta-row">
+              <a href="#experience" class="btn btn-primary">View Experience</a>
+              <a href="#contact" class="btn btn-secondary">Contact</a>
             </div>
 
-            <div class="hero-image fadeInUp" style="animation-delay: 0.4s">
-              <div class="floating-card card-1">
-                <div class="card-inner">
-                  <div class="card-icon">⚡</div>
-                  <p>Electrical Engineering</p>
-                </div>
-              </div>
-              <div class="floating-card card-2">
-                <div class="card-inner">
-                  <div class="card-icon">🔧</div>
-                  <p>Circuit Testing</p>
-                </div>
-              </div>
-              <div class="floating-card card-3">
-                <div class="card-inner">
-                  <div class="card-icon">🌱</div>
-                  <p>Renewable Energy</p>
-                </div>
-              </div>
-              <div class="profile-sphere">
-                <div class="sphere-inner">DF</div>
-              </div>
+            <div class="contact-mini">
+              <p>
+                <a href="mailto:demitrianfatah@mail.ugm.ac.id"
+                  >demitrianfatah@mail.ugm.ac.id</a
+                >
+              </p>
+              <p>
+                <a href="https://instagram.com/sibecuz" target="_blank" rel="noreferrer">
+                  @sibecuz
+                </a>
+              </p>
             </div>
           </div>
-        </div>
-        <div class="scroll-indicator">
-          <div class="mouse"></div>
-        </div>
-      </section>
 
-      <!-- About Section -->
-      <section class="about" id="about">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-label">
-              <span class="badge">About Me</span>
+          <div class="hero-visual reveal">
+            <div class="portrait-card">
+              <div class="portrait-inner">DF</div>
             </div>
-            <h2 class="section-title">Professional Profile</h2>
-            <p class="section-subtitle">Electrical Engineering Technology Student</p>
-          </div>
-
-          <div class="about-content">
-            <div class="about-card reveal-fade">
-              <div class="card-header">
-                <div class="icon-box">🎯</div>
-                <h3>Focus Areas</h3>
-              </div>
-              <p>
-                Specialized in electrical transmission and distribution systems with keen interest in 
-                renewable energy technologies. Proficient in circuit measurement, testing techniques, 
-                and practical laboratory work with advanced instruments including multimeters and LCR meters.
-              </p>
-            </div>
-
-            <div class="about-card reveal-fade">
-              <div class="card-header">
-                <div class="icon-box">💡</div>
-                <h3>Technical Foundation</h3>
-              </div>
-              <p>
-                Strong foundation in physics and mathematics with hands-on experience in circuit analysis, 
-                measurement techniques, and testing. Proficient in Python programming, data analysis using 
-                Microsoft Excel, and technical documentation with Microsoft Word.
-              </p>
-            </div>
-
-            <div class="about-card reveal-fade">
-              <div class="card-header">
-                <div class="icon-box">🚀</div>
-                <h3>Vision</h3>
-              </div>
-              <p>
-                Committed to supporting Indonesia's transition toward sustainable and reliable energy 
-                infrastructure. Eager to apply technical knowledge to real-world, field-oriented projects 
-                that make a meaningful impact.
-              </p>
-            </div>
+            <div class="floating-badge badge-one">⚡ Electrical</div>
+            <div class="floating-badge badge-two">🔧 Testing</div>
+            <div class="floating-badge badge-three">🌱 Energy</div>
           </div>
         </div>
       </section>
 
-      <!-- Experience Section -->
-      <section class="experience" id="experience">
+      <section id="about" class="section">
         <div class="container">
-          <div class="section-header">
-            <div class="section-label">
-              <span class="badge">My Journey</span>
-            </div>
-            <h2 class="section-title">Experience & Education</h2>
-            <p class="section-subtitle">Academic and professional development</p>
+          <div class="section-head reveal">
+            <p class="eyebrow">Summary</p>
+            <h2>About Me</h2>
           </div>
 
-          <div class="experience-filter reveal-fade">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="education">Education</button>
-            <button class="filter-btn" data-filter="award">Awards</button>
-            <button class="filter-btn" data-filter="organization">Organization</button>
+          <div class="summary-box reveal">
+            <p>
+              First-year Electrical Engineering Technology student at
+              Universitas Gadjah Mada with a strong foundation in physics and
+              mathematics, drawn to electrical transmission and distribution
+              systems and renewable energy technologies. Skilled in circuit
+              measurement and testing (multimeter, LCR meter, galvanometer),
+              Python programming, and data analysis using Microsoft Excel. Eager
+              to apply these technical foundations to hands-on, field-oriented
+              projects that support Indonesia's transition toward sustainable and
+              reliable energy infrastructure.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section alt-bg">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Academic Path</p>
+            <h2>Education</h2>
           </div>
 
-          <div class="experience-timeline">
-            <!-- Current Education -->
-            <div class="timeline-item reveal-fade" data-category="education">
-              <div class="timeline-marker">
-                <div class="marker-dot"></div>
-              </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
               <div class="timeline-content">
-                <div class="timeline-header">
-                  <span class="category-badge education">🎓 Education</span>
-                  <span class="timeline-date">2026 - Present</span>
+                <div class="timeline-top">
+                  <h3>Universitas Gadjah Mada</h3>
+                  <span>2026 – Present</span>
                 </div>
-                <h3>Electrical Engineering Technology</h3>
-                <p class="company">Universitas Gadjah Mada</p>
-                <p>
-                  First-year student pursuing electrical engineering with focus on transmission and 
-                  distribution systems. Strong foundation in physics and mathematics with practical 
-                  laboratory experience in circuit analysis and measurement.
+                <p class="role">Electrical Engineering Technology</p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-top">
+                  <h3>SMAN 1 Wonogiri</h3>
+                  <span>2023 – 2026</span>
+                </div>
+                <p class="role">
+                  Mathematics, Physics, Chemistry, Informatics
                 </p>
               </div>
-            </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <!-- Secondary Education -->
-            <div class="timeline-item reveal-fade" data-category="education">
-              <div class="timeline-marker">
-                <div class="marker-dot"></div>
-              </div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <span class="category-badge education">🎓 Education</span>
-                  <span class="timeline-date">2023 - 2026</span>
-                </div>
-                <h3>High School Diploma</h3>
-                <p class="company">SMAN 1 Wonogiri - Merdeka Curriculum</p>
-                <p>
-                  Completed high school with specialization in Advanced Mathematics, Physics, Chemistry, 
-                  and Informatics. Developed strong analytical and problem-solving skills fundamental 
-                  to engineering studies.
-                </p>
-              </div>
-            </div>
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Practical Experience</p>
+            <h2>Experience</h2>
+          </div>
 
-            <!-- Award 1 -->
-            <div class="timeline-item reveal-fade" data-category="award">
-              <div class="timeline-marker">
-                <div class="marker-dot"></div>
-              </div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <span class="category-badge award">🏆 Award</span>
-                  <span class="timeline-date">2025</span>
-                </div>
-                <h3>2nd Place - National Physics Olympiad</h3>
-                <p class="company">Science Week UNS (Universitas Sebelas Maret)</p>
-                <p>
-                  Recognized for exceptional performance in physics olympiad competition among 
-                  participants nationwide. Demonstrated mastery in physics principles and problem-solving.
-                </p>
-              </div>
-            </div>
-
-            <!-- Award 2 -->
-            <div class="timeline-item reveal-fade" data-category="award">
-              <div class="timeline-marker">
-                <div class="marker-dot"></div>
-              </div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <span class="category-badge award">🏆 Award</span>
-                  <span class="timeline-date">2026</span>
-                </div>
-                <h3>UKBI Score 709</h3>
-                <p class="company">Indonesian Language Proficiency Test</p>
-                <p>
-                  Achieved strong score on the Indonesian Language Proficiency Test (Uji Kemampuan 
-                  Berbahasa Indonesia), demonstrating advanced proficiency in Indonesian language.
-                </p>
-              </div>
-            </div>
-
-            <!-- Organization -->
-            <div class="timeline-item reveal-fade" data-category="organization">
-              <div class="timeline-marker">
-                <div class="marker-dot"></div>
-              </div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <span class="category-badge organization">🤝 Organization</span>
-                  <span class="timeline-date">2024 - 2026</span>
-                </div>
-                <h3>Event Coordinator & Member</h3>
-                <p class="company">Religious Activities & Community Engagement</p>
-                <p>
-                  Coordinated religious activities including Ramadan programs and overnight spiritual 
-                  retreats. Collaborated with fellow community members on event planning and community 
-                  outreach initiatives.
+          <div class="experience-box reveal">
+            <div class="experience-row">
+              <span class="label">2024 – 2026</span>
+              <div>
+                <h3>Ikhwan Coordinator</h3>
+                <p>Rohani Islam (ROHIS), SMAN 1 Wonogiri</p>
+                <p class="light">
+                  Coordinated religious activities including Ramadan takjil
+                  distribution programs and an overnight spiritual retreat
+                  (Mabit), collaborating with fellow committee members on event
+                  planning and community outreach.
                 </p>
               </div>
             </div>
@@ -296,105 +169,59 @@
         </div>
       </section>
 
-      <!-- Contact Section -->
-      <section class="contact" id="contact">
+      <section id="awards" class="section alt-bg">
         <div class="container">
-          <div class="contact-content">
-            <div class="contact-text reveal-fade">
-              <div class="section-label">
-                <span class="badge">Get In Touch</span>
-              </div>
-              <h2 class="section-title">Let's Connect</h2>
-              <p class="section-subtitle">
-                I'm always interested in discussing electrical engineering, technology, and opportunities 
-                to collaborate on meaningful projects. Feel free to reach out!
-              </p>
-              
-              <div class="contact-links">
-                <a href="mailto:demitrian.fatah@mail.ugm.ac.id" class="contact-link reveal-fade">
-                  <span class="link-icon">✉️</span>
-                  <div>
-                    <p class="link-label">Email</p>
-                    <p class="link-value">demitrian.fatah@mail.ugm.ac.id</p>
-                  </div>
-                </a>
+          <div class="section-head reveal">
+            <p class="eyebrow">Recognitions</p>
+            <h2>Awards</h2>
+          </div>
 
-                <a href="https://linkedin.com/in/demitrian-fatah" target="_blank" rel="noreferrer" class="contact-link reveal-fade">
-                  <span class="link-icon">💼</span>
-                  <div>
-                    <p class="link-label">LinkedIn</p>
-                    <p class="link-value">Connect with me</p>
-                  </div>
-                </a>
+          <ul class="award-list reveal">
+            <li>2nd place in the national physics olympiad at Science Week UNS (2025)</li>
+            <li>UKBI Score 709 (2026)</li>
+          </ul>
+        </div>
+      </section>
 
-                <a href="https://github.com/demitrianfatah" target="_blank" rel="noreferrer" class="contact-link reveal-fade">
-                  <span class="link-icon">💻</span>
-                  <div>
-                    <p class="link-label">GitHub</p>
-                    <p class="link-value">View my repositories</p>
-                  </div>
-                </a>
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Connect</p>
+            <h2>Contact</h2>
+          </div>
 
-                <a href="tel:+6282226026615" class="contact-link reveal-fade">
-                  <span class="link-icon">📱</span>
-                  <div>
-                    <p class="link-label">Phone</p>
-                    <p class="link-value">+62 822 2602 6615</p>
-                  </div>
-                </a>
-              </div>
+          <div class="contact-grid reveal">
+            <div class="contact-card">
+              <span>Email</span>
+              <a href="mailto:demitrianfatah@mail.ugm.ac.id"
+                >demitrianfatah@mail.ugm.ac.id</a
+              >
             </div>
 
-            <form class="contact-form reveal-fade" id="contactForm">
-              <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required placeholder="John Doe" />
-              </div>
+            <div class="contact-card">
+              <span>Instagram</span>
+              <a href="https://instagram.com/sibecuz" target="_blank" rel="noreferrer">
+                @sibecuz
+              </a>
+            </div>
 
-              <div class="form-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required placeholder="john@example.com" />
-              </div>
-
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required placeholder="Collaboration or inquiry" />
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-large">
-                <span>Send Message</span>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M2 10L18 2L10 18L8 11L2 10Z" fill="currentColor"/>
-                </svg>
-              </button>
-
-              <p class="form-note">I'll get back to you as soon as possible!</p>
-            </form>
+            <div class="contact-card">
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/demitrian-fatah" target="_blank" rel="noreferrer">
+                linkedin.com/in/demitrian-fatah
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <p>&copy; <span id="year"></span> Demitrian Fatah. All rights reserved.</p>
-          <div class="footer-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Demitrian Fatah</p>
       </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
   </body>
 </html>
