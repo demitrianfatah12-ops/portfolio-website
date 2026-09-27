@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demitrian Fatah - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website with About Me, Experience, Projects, and Contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <a href="#" class="logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="url(#gradient-logo)" />
+              <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-weight="700" font-size="18" font-family="Arial">DF</text>
+              <defs>
+                <linearGradient id="gradient-logo" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#7c9cff;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#88f0d0;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Demitrian</span>
+          </a>
+
+          <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#contact" class="btn btn-primary">Get In Touch</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <div class="hero-label fadeInUp" style="animation-delay: 0s">
+                <span class="badge">Welcome to my portfolio</span>
+              </div>
+              <h1 class="hero-title fadeInUp" style="animation-delay: 0.1s">
+                Crafting Digital <span class="gradient-text">Experiences</span>
+              </h1>
+              <p class="hero-subtitle fadeInUp" style="animation-delay: 0.2s">
+                I'm a full-stack developer passionate about creating beautiful, 
+                functional, and user-centric digital solutions that drive real business value.
+              </p>
+              <div class="hero-cta fadeInUp" style="animation-delay: 0.3s">
+                <a href="#projects" class="btn btn-primary btn-large">
+                  <span>View My Work</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7 10H13M13 10L10 7M13 10L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-large">
+                  <span>Let's Connect</span>
+                </a>
+              </div>
+
+              <div class="hero-stats fadeInUp" style="animation-delay: 0.4s">
+                <div class="stat">
+                  <div class="stat-value">3+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">15+</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">50+</div>
+                  <div class="stat-label">Happy Clients</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-image fadeInUp" style="animation-delay: 0.4s">
+              <div class="floating-card card-1">
+                <div class="card-inner">
+                  <div class="card-icon">💻</div>
+                  <p>Web Development</p>
+                </div>
+              </div>
+              <div class="floating-card card-2">
+                <div class="card-inner">
+                  <div class="card-icon">🎨</div>
+                  <p>UI/UX Design</p>
+                </div>
+              </div>
+              <div class="floating-card card-3">
+                <div class="card-inner">
+                  <div class="card-icon">⚡</div>
+                  <p>Performance</p>
+                </div>
+              </div>
+              <div class="profile-sphere">
+                <div class="sphere-inner">DF</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">
+              <span class="badge">About Me</span>
+            </div>
+            <h2 class="section-title">Who I Am</h2>
+            <p class="section-subtitle">Passionate developer crafting digital solutions</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card reveal-fade">
+              <div class="card-header">
+                <div class="icon-box">🎯</div>
+                <h3>My Approach</h3>
+              </div>
+              <p>
+                I believe in building products that are not only visually stunning but also 
+                intuitive and accessible. Every project is an opportunity to solve real problems 
+                and create lasting impact.
+              </p>
+            </div>
+
+            <div class="about-card reveal-fade">
+              <div class="card-header">
+                <div class="icon-box">💡</div>
+                <h3>What I Do</h3>
+              </div>
+              <p>
+                Full-stack web development with a focus on frontend excellence. I specialize in 
+                modern frameworks, responsive design, and creating seamless user experiences 
+                that users love.
+              </p>
+            </div>
+
+            <div class="about-card reveal-fade">
+              <div class="card-header">
+                <div class="icon-box">🚀</div>
+                <h3>Why Choose Me</h3>
+              </div>
+              <p>
+                Beyond technical skills, I bring creativity, attention to detail, and a 
+                collaborative spirit. I'm committed to continuous learning and staying 
+                updated with latest technologies.
+              </p>
+            </div>
+          </div>
+
+          <div class="skills-section reveal-fade">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h4>Frontend</h4>
+                <p>React, Vue, TypeScript, Tailwind CSS</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="1"></circle>
+                    <path d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m5.08 0l4.24-4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24m5.08 0l4.24 4.24"></path>
+                  </svg>
+                </div>
+                <h4>Backend</h4>
+                <p>Node.js, Python, MongoDB, PostgreSQL</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                    <path d="M9 11l3 3L22 4"></path>
+                  </svg>
+                </div>
+                <h4>DevOps</h4>
+                <p>Git, Docker, CI/CD, AWS</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <h4>Collaboration</h4>
+                <p>Figma, Jira, Agile, Remote Work</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="experience" id="experience">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">
+              <span class="badge">My Journey</span>
+            </div>
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Growth through challenges and achievements</p>
+          </div>
+
+          <div class="experience-filter reveal-fade">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="work">Work</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+            <button class="filter-btn" data-filter="award">Awards</button>
+            <button class="filter-btn" data-filter="organization">Organization</button>
+          </div>
+
+          <div class="experience-timeline">
+            <!-- Work Experience -->
+            <div class="timeline-item reveal-fade" data-category="work">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="category-badge work">💼 Work</span>
+                  <span class="timeline-date">2023 - Present</span>
+                </div>
+                <h3>Senior Frontend Developer</h3>
+                <p class="company">Tech Startup Inc.</p>
+                <p>
+                  Leading frontend development for a SaaS platform with 10k+ users. 
+                  Implemented modern architecture, improved performance by 40%, 
+                  and mentored junior developers.
+                </p>
+                <div class="timeline-tags">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Tailwind</span>
+                  <span>Web Performance</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal-fade" data-category="work">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="category-badge work">💼 Work</span>
+                  <span class="timeline-date">2022 - 2023</span>
+                </div>
+                <h3>Frontend Developer</h3>
+                <p class="company">Digital Agency Pro</p>
+                <p>
+                  Developed responsive websites and web applications for 20+ clients. 
+                  Collaborated with designers to implement pixel-perfect designs 
+                  and ensured cross-browser compatibility.
+                </p>
+                <div class="timeline-tags">
+                  <span>JavaScript</span>
+                  <span>Vue.js</span>
+                  <span>SCSS</span>
+                  <span>Responsive Design</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="timeline-item reveal-fade" data-category="education">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="category-badge education">🎓 Education</span>
+                  <span class="timeline-date">2020 - 2024</span>
+                </div>
+                <h3>Bachelor of Information Technology</h3>
+                <p class="company">University of Indonesia</p>
+                <p>
+                  Graduated with honors (GPA: 3.8/4.0). Specialized in web development 
+                  and software engineering. Active in student organizations and tech communities.
+                </p>
+                <div class="timeline-tags">
+                  <span>Web Development</span>
+                  <span>Algorithms</span>
+                  <span>Software Engineering</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="timeline-item reveal-fade" data-category="award">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="category-badge award">🏆 Award</span>
+                  <span class="timeline-date">2023</span>
+                </div>
+                <h3>Best Innovation Award</h3>
+                <p class="company">National Tech Conference 2023</p>
+                <p>
+                  Recognized for developing an innovative solution that improved 
+                  accessibility for disabled users. Won among 200+ submissions.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal-fade" data-category="award">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="category-badge award">🏆 Award</span>
+                  <span class="timeline-date">2022</span>
+                </div>
+                <h3>Developer of the Year</h3>
+                <p class="company">Tech Community Awards</p>
+                <p>
+                  Awarded for outstanding contributions to open-source projects 
+                  and mentoring new developers in the community.
+                </p>
+              </div>
+            </div>
+
+            <!-- Organization -->
+            <div class="timeline-item reveal-fade" data-category="organization">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="category-badge organization">🤝 Organization</span>
+                  <span class="timeline-date">2022 - 2024</span>
+                </div>
+                <h3>President of Tech Club</h3>
+                <p class="company">University of Indonesia</p>
+                <p>
+                  Led a community of 200+ members. Organized workshops, hackathons, 
+                  and mentorship programs. Increased engagement by 300%.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal-fade" data-category="organization">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="category-badge organization">🤝 Organization</span>
+                  <span class="timeline-date">2021 - 2022</span>
+                </div>
+                <h3>Core Team Member</h3>
+                <p class="company">Open Source Community</p>
+                <p>
+                  Contributed to several open-source projects. Reviewed PRs, 
+                  wrote documentation, and helped onboard new contributors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">
+              <span class="badge">Featured Work</span>
+            </div>
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">A selection of recent work</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal-fade">
+              <div class="project-image gradient-1">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Web Application</span>
+                <h3>E-Commerce Platform</h3>
+                <p>
+                  A full-stack e-commerce solution with product catalog, shopping cart, 
+                  payment integration, and admin dashboard.
+                </p>
+                <div class="project-meta">
+                  <div class="project-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal-fade">
+              <div class="project-image gradient-2">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Dashboard</span>
+                <h3>Analytics Dashboard</h3>
+                <p>
+                  Real-time analytics platform with data visualization, custom reports, 
+                  and actionable insights for businesses.
+                </p>
+                <div class="project-meta">
+                  <div class="project-tags">
+                    <span>Vue.js</span>
+                    <span>D3.js</span>
+                    <span>Firebase</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal-fade">
+              <div class="project-image gradient-3">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Mobile App</span>
+                <h3>Task Management App</h3>
+                <p>
+                  Cross-platform task management application with real-time sync, 
+                  team collaboration, and mobile-first design.
+                </p>
+                <div class="project-meta">
+                  <div class="project-tags">
+                    <span>React Native</span>
+                    <span>Firebase</span>
+                    <span>Redux</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal-fade">
+              <div class="project-image gradient-4">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Design System</span>
+                <h3>UI Component Library</h3>
+                <p>
+                  Comprehensive component library with 50+ customizable components, 
+                  documentation, and Storybook integration.
+                </p>
+                <div class="project-meta">
+                  <div class="project-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Storybook</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal-fade">
+              <div class="project-image gradient-5">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Website</span>
+                <h3>Corporate Website</h3>
+                <p>
+                  Modern corporate website with CMS integration, SEO optimization, 
+                  and high performance across all devices.
+                </p>
+                <div class="project-meta">
+                  <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>Headless CMS</span>
+                    <span>Tailwind</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal-fade">
+              <div class="project-image gradient-6">
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">SaaS</span>
+                <h3>Content Creator Platform</h3>
+                <p>
+                  Platform for content creators with monetization tools, analytics, 
+                  subscriber management, and community features.
+                </p>
+                <div class="project-meta">
+                  <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>Stripe</span>
+                    <span>PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="view-all-projects reveal-fade">
+            <a href="#" class="btn btn-secondary">View All Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-text reveal-fade">
+              <div class="section-label">
+                <span class="badge">Get In Touch</span>
+              </div>
+              <h2 class="section-title">Let's Work Together</h2>
+              <p class="section-subtitle">
+                I'm always interested in hearing about new projects and opportunities. 
+                Whether you have a question or just want to say hi, feel free to reach out!
+              </p>
+              
+              <div class="contact-links">
+                <a href="mailto:hello@demitrian.com" class="contact-link reveal-fade">
+                  <span class="link-icon">✉️</span>
+                  <div>
+                    <p class="link-label">Email</p>
+                    <p class="link-value">hello@demitrian.com</p>
+                  </div>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="contact-link reveal-fade">
+                  <span class="link-icon">💼</span>
+                  <div>
+                    <p class="link-label">LinkedIn</p>
+                    <p class="link-value">Connect with me</p>
+                  </div>
+                </a>
+
+                <a href="https://github.com" target="_blank" rel="noreferrer" class="contact-link reveal-fade">
+                  <span class="link-icon">👨‍💻</span>
+                  <div>
+                    <p class="link-label">GitHub</p>
+                    <p class="link-value">Check my repositories</p>
+                  </div>
+                </a>
+
+                <a href="https://twitter.com" target="_blank" rel="noreferrer" class="contact-link reveal-fade">
+                  <span class="link-icon">🐦</span>
+                  <div>
+                    <p class="link-label">Twitter</p>
+                    <p class="link-value">Follow me</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <form class="contact-form reveal-fade" id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Project inquiry" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">
+                <span>Send Message</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M2 10L18 2L10 18L8 11L2 10Z" fill="currentColor"/>
+                </svg>
+              </button>
+
+              <p class="form-note">I'll get back to you as soon as possible!</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; <span id="year"></span> Demitrian Fatah. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
